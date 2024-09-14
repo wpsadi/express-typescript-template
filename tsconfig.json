@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",        // Add this line
+    "paths": {              // Add this line
+      "@/*": ["src/*"]      // Add this line to map @ to the src folder
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
